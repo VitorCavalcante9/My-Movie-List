@@ -1,0 +1,115 @@
+.content{
+  padding: 3rem;
+}
+
+.head{
+  margin: 1.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.head .poster{
+  width: 20rem;
+  height: 30rem;
+  background-color: var(--color-text-primary);
+  overflow: hidden;
+}
+
+.head .poster img{
+  width: 100%;
+  height: 100%;
+  
+  object-position: center;
+  object-fit: cover;
+}
+
+.info{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 3rem;
+  text-align: left;
+
+  font: 600 2rem Rajdhani;
+}
+
+.info h1{
+  margin: 1rem 0;
+  font: 600 3rem Rajdhani;
+  margin-bottom: 3rem;
+}
+
+.info p{
+  margin-bottom: 1rem;
+}
+
+.info .buttons{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.info button{
+  width: 20rem;
+  height: 5rem;
+  margin-top: 1rem;
+
+  cursor: pointer;
+
+  border-radius: 10rem;
+  background: var(--color-button);
+  color: var(--color-text-button);
+  text-align: center;
+  border: 0;
+
+  font: 600 1.8rem Rajdhani;
+  transition: background 0.2s;
+}
+
+button + button {
+  margin-left: 2rem;
+}
+
+.addList:after{
+  content: 'Adicionar à lista';
+}
+
+.toWatch:after{
+  content: 'Pra ver';
+}
+
+.toWatch:hover::after, .watched:after{
+  content: 'Já visto';
+}
+
+.info button:hover{
+  background: #913538;
+}
+
+.sinopse{
+  margin: 1.5rem;
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.sinopse h2{
+  font: 600 2.5rem Rajdhani;
+  margin-bottom: 1rem;
+}
+
+.sinopse p{
+  text-indent: 3rem;
+  font: 500 2rem Rajdhani;
+  text-align: left;
+  line-height: 2.8rem;
+}

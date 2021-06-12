@@ -1,0 +1,34 @@
+.inputBlock{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.inputBlock + .inputBlock{
+  margin-top: 2rem;
+}
+
+.inputBlock label{
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+}
+
+.inputBlock input{
+  width: 100%;
+  height: 5rem;
+  border-radius: 10rem;
+  background: var(--color-secondary);
+  color: var(--color-text-secondary);
+  border: 0px;
+  outline: 0;
+  padding: 0 2.4rem;
+
+  font: 500 1.6rem Rajdhani;
+}
+
+@media (min-width:1100px){
+  .inputBlock label{
+    font-size: 1.8rem;
+  }
+}
