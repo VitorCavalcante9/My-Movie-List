@@ -1,8 +1,8 @@
 # My Movie List
 
-Vídeo rodando a aplicação: 
+Vídeo rodando a aplicação: https://youtu.be/OzhAjnnvdJs
 
-Link do site hospedado: 
+Link do site hospedado: https://mymovielist-app.netlify.app/
 
 ## Tecnologias
   - NodeJS
