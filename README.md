@@ -1,8 +1,8 @@
 # My Movie List
 
-## Vídeo rodando a aplicação: 
+Vídeo rodando a aplicação: 
 
-## Link do site hospedado: 
+Link do site hospedado: 
 
 ## Tecnologias
   - NodeJS
