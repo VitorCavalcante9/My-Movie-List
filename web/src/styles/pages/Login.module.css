@@ -1,0 +1,92 @@
+.pageContainer{
+  width: 100%;
+  min-height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  overflow-y: auto;
+  position: relative;
+}
+
+.startContainer{
+  position: relative;
+  width: 70%;
+  min-height: 30vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoContainer{
+  text-align: center;
+}
+
+.logoContainer h1{
+  font: 600 4rem Orbitron;
+}
+
+.formContainer{
+  position: relative;
+  background-color: var(--color-primary);
+  width: 100%;
+  min-height: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registerContainer{
+  text-align: center;
+  width: 38rem;
+  margin: 5rem 0;
+}
+
+.registerContainer h2{
+  font-weight: 600;
+  font-size: 2.6rem;
+  color: var(--color-text-title);
+  margin-bottom: 5rem;
+}
+
+.registerContainer input, .registerContainer button{
+  width: 85%;
+}
+
+.registerContainer hr{
+  width: 100%;
+  margin: 2.8rem 0;
+}
+
+.registerContainer p{
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+@media(min-width: 1100px){
+  .pageContainer{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .startContainer{
+    width: 62%;
+    height: 100%;
+    background-position: 50% 46.5%;
+    background-size: auto 10rem;
+  }
+
+  .formContainer{
+    width: 38%;
+    height: 100%;
+  }
+  
+  .logoContainer h1{
+    font-size: 6rem;
+  }
+}

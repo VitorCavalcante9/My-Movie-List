@@ -1,0 +1,174 @@
+.pageContainer{
+  width: 90vw;
+  min-height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: center;
+
+  margin: 0 auto;
+  padding: 10rem 0 0;
+}
+
+.sideBar{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sideBar h2{
+  font: 600 2.5rem Rajdhani;
+}
+
+.menu{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 0 2rem;
+}
+
+.icon, .icon a{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+
+  text-decoration: none;
+  font: 600 2rem Rajdhani;
+  color: var(--color-text-primary);
+  padding: 0.5rem;
+
+  transition: width 0.2s;
+}
+
+.icon a img{
+  width: 3.5rem;
+  color: var(--color-text-primary);
+  margin-right: 1.5rem;
+}
+
+.icon p{
+  margin-top: 0.6rem;
+}
+
+.icon:hover{
+  background-color: var(--color-primary);
+}
+.icon:hover p{
+  color: var(--color-text-secondary);
+}
+
+.mainBlockContainer{
+  width:100%;
+  min-height: 74vh;
+  background: var(--color-primary);
+  border-radius: 1rem;
+
+  margin: 1.5rem auto 7.5rem;
+  padding: 2rem;
+}
+
+/* Modals */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 11;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modalContent {
+  background-color: var(--color-modal);
+  border-radius: 1rem;
+  margin: 33% auto 0;
+  width: 90%;
+  max-width: 500px;
+  height: 20rem;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent h2{
+  color: var(--color-text-title);
+  font: 600 2.4rem Rajdhani;
+}
+
+.modalContent p{
+  font: 500 1.7rem Rajdhani;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.modalContent .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalContent .buttons button{
+  width: 12rem;
+  height: 3rem;
+
+  cursor: pointer;
+
+  border-radius: 10rem;
+  background: var(--color-button);
+  color: var(--color-text-button);
+  text-align: center;
+  border: 0;
+
+  font: 600 1.8rem Rajdhani;
+  transition: background 0.2s;
+}
+
+.modalContent .buttons button:hover{
+  background: #913538;
+}
+
+@media (min-width:1100px){
+  .pageContainer{
+    width: 80vw;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 10rem;
+    margin: 0 12rem 0;
+  }
+
+  .mainBlockContainer{
+    width: 50vw;
+    margin: 5rem 0;
+    padding: 2rem;
+  }
+
+  .sideBar{
+    margin: 30rem 0;
+  }
+  
+  .menu{
+    margin-top: 3rem;
+    flex-direction: column;
+  }
+
+  .modalContent{
+    margin: 15% auto 0;
+  }
+
+  .icon{
+    margin-top: 1rem;
+  }
+}

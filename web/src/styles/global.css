@@ -1,0 +1,33 @@
+:root {
+  font-size: 62.5%;
+  
+  --color-background: #501B1D;
+  --color-primary: #2E1114;
+  --color-secondary: #7F6566;
+  --color-modal : #4B1A1C;
+  --color-button : #8A2E31;
+  --color-button-secondary : #E5E5E5;
+  --color-button-session : #993336;
+  --color-text-title: #C4C4C4;
+  --color-text-primary: #ADADAD;
+  --color-text-secondary: #FFF;
+  --color-text-button: #FFF;
+  --color-text-button-secondary : #000;
+  --color-text-button-session : #E3CFCF;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root{
+  height: 100vh;
+}
+
+body{
+  background: var(--color-background);
+  font: 500 1.6rem Rajdhani;
+  color: var(--color-text-primary);
+}

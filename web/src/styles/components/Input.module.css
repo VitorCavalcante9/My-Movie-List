@@ -1,0 +1,25 @@
+.inputBlock{
+  position: relative;
+}
+
+.inputBlock + .inputBlock{
+  margin-top: 2rem;
+}
+
+.inputBlock input{
+  width: 100%;
+  height: 5rem;
+  border-radius: 10rem;
+  background: var(--color-secondary);
+  color: var(--color-text-secondary);
+  border: 0px;
+  outline: 0;
+  padding: 0 2.4rem;
+
+  font: 500 1.6rem Rajdhani;
+}
+
+::placeholder{
+  color: var(--color-text-secondary);
+  opacity: 0.5;
+}
